@@ -20,6 +20,9 @@ app.delete("/test/:id", (req, res) => {
   //localhost:8081/test/1
   res.send("delete end point");
 });
+app.put("/test", (req, res) => {
+  res.send("Update test");
+});
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
